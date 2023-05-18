@@ -1,5 +1,6 @@
+
 section.enterprises{
-    height: 50%;
+    height: 40%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -15,7 +16,7 @@ section.enterprises{
 }
 
 section.whyUS{
-    height: 50%;
+    height: 60%;
     width: 100%;
     background-color: rgb(249, 253, 255);
     display: flex;
@@ -34,7 +35,7 @@ section.whyUS{
 
 .cardsTitle h1{
     font-size: 40px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 .cardsTitle p{
@@ -50,7 +51,7 @@ section.whyUS{
 }
 
 .card{
-    padding: 30px;
+    padding: 0 30px;
     width: 30%;
     height: 100%;
     border-radius: 20px;
@@ -62,14 +63,17 @@ section.whyUS{
 
 .card img{
     width: 30%;
-    margin-bottom: -20px;
     margin-left: -15px;
 }
 
-.card > h2{
+.card h2{
     color: rgb(56, 56, 56);
+    font-size: 1.5em;
 }
 .card p{
+    font-size: .9rem;
     color: rgb(56, 56, 56);
     text-align: justify;
 }
+
+
