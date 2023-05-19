@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./styles/main.css">
     <link rel="icon" type="image/png" href="./images/pageIcon.png">
     <title>Bold Agency</title>
 </head>
@@ -86,7 +86,120 @@
                 </div>
         </main>
     </section>
-    <script src="script.js">
+    <section class="feedbacks">
+        <h1>Feedbacks</h1>
+        <div class="carousel">
+            <div class="personContainer">
+                <div id="firstPerson" class="person">
+                    <img src="./images/DEPOIMENTO1.png" class="profilePicture" />
+                    <h3>Lilya</h3>
+                    <p>Work with Bold Agency was the best part of my professional career. Nothing
+                        could be better without it, and your business can go to another level.</p>
+                    <img src="./images/RATE.svg" class="stars" />
+                </div>
+                <div class="person">
+                    <img src="./images/DEPOIMENTO1.png" class="profilePicture" />
+                    <h3>Lilya</h3>
+                    <p>Work with Bold Agency was the best part of my professional career. Nothing
+                        could be better without it, and your business can go to another level.</p>
+                    <img src="./images/RATE.svg" class="stars" />
+                </div>
+                <div class="person">
+                    <img src="./images/DEPOIMENTO1.png" class="profilePicture" />
+                    <h3>Lilya</h3>
+                    <p>Work with Bold Agency was the best part of my professional career. Nothing
+                        could be better without it, and your business can go to another level.</p>
+                    <img src="./images/RATE.svg" class="stars" />
+                </div>
+                <div class="person">
+                    <img src="./images/DEPOIMENTO1.png" class="profilePicture" />
+                    <h3>Lilya</h3>
+                    <p>Work with Bold Agency was the best part of my professional career. Nothing
+                        could be better without it, and your business can go to another level.</p>
+                    <img src="./images/RATE.svg" class="stars" />
+                </div>
+                <div class="person">
+                    <img src="./images/DEPOIMENTO1.png" class="profilePicture" />
+                    <h3>Lilya</h3>
+                    <p>Work with Bold Agency was the best part of my professional career. Nothing
+                        could be better without it, and your business can go to another level.</p>
+                    <img src="./images/RATE.svg" class="stars" />
+                </div>
+                <div id="lastPerson" class="person">
+                    <img src="./images/DEPOIMENTO1.png" class="profilePicture" />
+                    <h3>Lilya</h3>
+                    <p>Work with Bold Agency was the best part of my professional career. Nothing
+                        could be better without it, and your business can go to another level.</p>
+                    <img src="./images/RATE.svg" class="stars" />
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button onclick="scrollX()" id="scrollLeft"></button>
+            <button onclick="scrollX()" id="scrollRight"></button>
+        </div>
+    </section>
+    <section class="graph">
+        <h1>BoldAgency's growth in the last years</h1>
+        <div>
+            <canvas id="myChart"></canvas>
+        </div>
+    </section>
+    <section class="contact">
+        <h1>Send your message to us!</h1>
+        <form>
+            <input type="text" id="" placeholder="Name"/>
+            <input type="email" id="" placeholder="E-mail"/>
+            <textarea placeholder="Your message"></textarea>
+            <input type="button" value="Send!" />
+        </form>
+    </section>
+    <footer>
+        <h2>Todos os direitos reservados JottaDev</h2>
+            <nav class="menu">
+                <a href="">Start</a>
+                <a href="">why us?</a>
+                <a href="">Statements</a>
+                <a href="">Contact Us!</a>
+            </nav>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+    const ctx = document.getElementById('myChart');
+
+    const date = new Date()
+
+    let year = date.getFullYear()
+
+    new Chart(ctx, {
+        type: 'bar',
+        data: {
+        labels: [year - 5, year - 4, year - 3, year - 2, year - 1, year],
+        datasets: [{
+            label: 'Million of $USD',
+            data: [3, 5.6, 14.1, 24.3, 41.7, 52.8],
+            borderWidth: 2,
+            backgroundColor: [
+        'rgb(224, 29, 29, 0.7)',
+        'rgba(29, 29, 224, 0.7)',
+        'rgba(255, 205, 86, 0.7)',
+        'rgba(75, 192, 192, 0.7)',
+        'rgba(54, 162, 235, 0.7)',
+        'rgba(153, 102, 255, 0.7)',
+        'rgba(201, 203, 207, 0.7)'
+        ]
+        }]
+        },
+        options: {
+        scales: {
+            y: {
+            beginAtZero: true
+            }
+        }
+        }
+    });
     </script>
+    <script src="script.js"></script>
 </body>
 </html>

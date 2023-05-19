@@ -1,0 +1,124 @@
+section.graph{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(248, 248, 248);
+    padding: 50px;
+
+}
+
+.graph > div{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+}
+
+.graph > h1{
+    color: rgb(22, 22, 22);
+    font-size: 2em;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+#myChart{
+    width: 100%;
+    height: 100%;
+}
+
+section.contact{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact > h1{
+    color: rgb(46, 46, 46);
+    font-size: 35px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.contact > form{
+    width: 75%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+form > input{
+    width: 60%;
+    padding: 20px 25px;
+    border-radius: 20px;
+    border: 1px solid rgb(99, 99, 99);
+    outline: 0;
+    font-family: 'poppins', sans-serif;
+    font-size: 16px;
+    transition: 0.2s ease-in-out;
+}
+
+form > input:focus{
+    border: 1px solid rgb(55, 55, 255);
+    box-shadow: 0px 2px 0 2px rgb(55, 55, 255);
+}
+
+form > textarea{
+    width: 60%;
+    height: 40%;
+    border-radius: 15px;
+    border: 1px solid rgb(99, 99, 99);
+    padding: 1.5%;
+    font-family: 'poppins', sans-serif;
+    font-size: 16px;
+    resize: none;
+    outline: 0;
+}
+
+form > textarea:focus{
+    border: 1px solid rgb(55, 55, 255);
+    box-shadow: 0px 2px 0 3px rgb(55, 55, 255);
+}
+
+form > input[type=button]{
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    color: white;
+    background-color: rgb(55, 55, 255);
+    border: 0;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+form > input[type=button]:hover{
+    color: rgb(55, 55, 255);
+    background-color: white;
+    box-shadow: 0px 2px 0 3px rgb(55, 55, 255);
+}
+
+footer{
+    width: 100%;
+    height: 10%;
+    background-color: rgb(47, 47, 224);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer h2{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+footer > nav{
+    font-weight: 200;
+}
+

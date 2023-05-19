@@ -10,7 +10,7 @@
     width: 100%;
     height: 25%;
     padding: 20px 0;
-    background-image: url('./images/banner_meio.svg');
+    background-image: url('../images/banner_meio.svg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -99,7 +99,7 @@ main > div{
     overflow: visible;
     width: 50%;
     height: 100%;
-    background-image: url('./images/mackbook.png');
+    background-image: url('../images/mackbook.png');
     background-size: 80%;
     background-repeat: no-repeat;
     background-position: center;
