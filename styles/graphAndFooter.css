@@ -24,6 +24,10 @@ section.graph{
     font-weight: 600;
 }
 
+.graph p{
+    color: rgb(129, 129, 129);
+}
+
 #myChart{
     width: 100%;
     height: 100%;

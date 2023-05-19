@@ -1,8 +1,7 @@
-const buttonLeft = document.querySelector('#scrollLeft')
 
-    const buttonRight = document.querySelector('#scrollRight')
-    
-    let feedback = document.querySelector('.personContainer')
+const buttonLeft = document.querySelector('#scrollLeft')
+const buttonRight = document.querySelector('#scrollRight')
+let feedback = document.querySelector('.personContainer')
 
 function scrollX(){    
 
@@ -16,6 +15,10 @@ if(feedback.style.transform == 'translateX(0px)'){
     buttonLeft.style.filter = 'brightness(30%)'
 }
 
+}
+
+function backToTop(){
+    window.scrollTo(0,0)
 }
 
 window.onload(setInterval(() => {scrollX()}, 3500))
