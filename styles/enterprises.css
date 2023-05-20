@@ -43,7 +43,7 @@ section.whyUS{
 }
 
 .cardContainer{
-    width: 80%;
+    width: 95%;
     height: 70%;
     display: flex;
     justify-content: space-between;
@@ -51,7 +51,7 @@ section.whyUS{
 }
 
 .card{
-    padding: 0 30px;
+    padding: 40px 30px;
     width: 30%;
     height: 100%;
     border-radius: 20px;
@@ -59,20 +59,23 @@ section.whyUS{
     background-color: white;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .card img{
-    width: 30%;
+    width: 60px;
     margin-left: -15px;
+    margin-bottom: -15px;
 }
 
 .card h2{
     color: rgb(56, 56, 56);
-    font-size: 1.5em;
+    font-size: 1rem;
+    margin-bottom: 10px;
 }
 .card p{
-    font-size: .9rem;
-    color: rgb(56, 56, 56);
+    font-size: .8rem;
+    color: rgb(102, 102, 102);
     text-align: justify;
 }
 

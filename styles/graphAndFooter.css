@@ -18,6 +18,7 @@ section.graph{
 }
 
 .graph > h1{
+    text-align: center;
     color: rgb(22, 22, 22);
     font-size: 2em;
     letter-spacing: 1px;
@@ -60,13 +61,14 @@ section.contact{
 
 form > input{
     width: 60%;
+    margin-bottom: 10px;
     padding: 20px 25px;
     border-radius: 20px;
     border: 1px solid rgb(99, 99, 99);
     outline: 0;
     font-family: 'poppins', sans-serif;
     font-size: 16px;
-    transition: 0.2s ease-in-out;
+    transition: all 0.5s ease-in-out; 
 }
 
 form > input:focus{
@@ -77,6 +79,7 @@ form > input:focus{
 form > textarea{
     width: 60%;
     height: 40%;
+    margin-bottom: 10px;
     border-radius: 15px;
     border: 1px solid rgb(99, 99, 99);
     padding: 1.5%;
@@ -84,6 +87,7 @@ form > textarea{
     font-size: 16px;
     resize: none;
     outline: 0;
+    transition: all 0.5s ease-in-out; 
 }
 
 form > textarea:focus{
@@ -92,14 +96,14 @@ form > textarea:focus{
 }
 
 form > input[type=button]{
+    transition: all 0.5s ease-in-out;    
     font-size: 18px;
     font-weight: 600;
     letter-spacing: 1.5px;
     color: white;
     background-color: rgb(55, 55, 255);
     border: 0;
-    cursor: pointer;
-    transition: 0.2s ease-in-out;
+    cursor: pointer;     
 }
 
 form > input[type=button]:hover{
@@ -118,8 +122,9 @@ footer{
 }
 
 footer h2{
-    font-size: 20px;
+    font-size: 1rem;
     font-weight: 400;
+    text-align: center;
 }
 
 footer > nav{

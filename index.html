@@ -11,7 +11,7 @@
 </head>
 <body>
     <main>
-        <header>
+        <header class="mainHead">
             <h2>Bold <span style="color: rgb(255, 255, 60);">Agency</span></h2>
             <nav class="menu">
                 <a href="">Start</a>
@@ -19,7 +19,15 @@
                 <a href="">Statements</a>
                 <a href="">Contact Us!</a>
             </nav>
-            <nav class="mobileMenu"></nav>
+            <nav class="mobileMenu">
+                <img onclick="revealMenu()" src="./images/menuIcon.svg" />
+                <div class="mobileLinks">
+                    <a href="">Start</a>
+                    <a href="">why us?</a>
+                    <a href="">Statements</a>
+                    <a href="">Contact Us!</a>
+                </div>
+            </nav>
         </header>
         <section class="experience">
             <div class="title">  
@@ -90,48 +98,38 @@
     <section class="feedbacks">
         <h1>Feedbacks</h1>
         <div class="carousel">
-            <div class="personContainer">
-                <div id="firstPerson" data-aos="flip-left" data-aos-duration="1000" class="person">
-                    <img src="./images/DEPOIMENTO1.png" class="profilePicture" />
-                    <h3>Lilya</h3>
-                    <p>Work with Bold Agency was the best part of my professional career. Nothing
-                        could be better without it, and your business can go to another level.</p>
-                    <img src="./images/RATE.svg" class="stars" />
+            <div data-aos="flip-down" class="personContainer">
+                <div class="person">
+                    <img src="./images/DEPOIMENTO1.png"/>
+                    <div class="personText">
+                        <h3>Lilya</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt officia, cupiditate et maiores vitae sequi ex odit culpa quia nisi odio ipsam magni</p>
+                    </div>
+                    <img src="./images/RATE.svg" />
                 </div>
-                <div class="person" data-aos="flip-left" data-aos-duration="1000">
-                    <img src="./images/DEPOIMENTO1.png"  class="profilePicture" />
-                    <h3>Lilya</h3>
-                    <p>Work with Bold Agency was the best part of my professional career. Nothing
-                        could be better without it, and your business can go to another level.</p>
-                    <img src="./images/RATE.svg" class="stars" />
+                <div class="person">
+                    <img src="./images/DEPOIMENTO1.png"/>
+                    <div class="personText">
+                        <h3>Lilya</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt officia, cupiditate et maiores vitae sequi ex odit culpa quia nisi odio ipsam magni</p>
+                    </div>
+                    <img src="./images/RATE.svg" />
                 </div>
-                <div class="person" data-aos="flip-left" data-aos-duration="1000">
-                    <img src="./images/DEPOIMENTO1.png"  class="profilePicture" />
-                    <h3>Lilya</h3>
-                    <p>Work with Bold Agency was the best part of my professional career. Nothing
-                        could be better without it, and your business can go to another level.</p>
-                    <img src="./images/RATE.svg" class="stars" />
+                <div class="person">
+                    <img src="./images/DEPOIMENTO1.png"/>
+                    <div class="personText">
+                        <h3>Lilya</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt officia, cupiditate et maiores vitae sequi ex odit culpa quia nisi odio ipsam magni</p>
+                    </div>
+                    <img src="./images/RATE.svg" />
                 </div>
-                <div class="person" data-aos="flip-left" data-aos-duration="1000">
-                    <img src="./images/DEPOIMENTO1.png" class="profilePicture" />
-                    <h3>Lilya</h3>
-                    <p>Work with Bold Agency was the best part of my professional career. Nothing
-                        could be better without it, and your business can go to another level.</p>
-                    <img src="./images/RATE.svg" class="stars" />
-                </div>
-                <div class="person"  data-aos="flip-left" data-aos-duration="1000">
-                    <img src="./images/DEPOIMENTO1.png" class="profilePicture" />
-                    <h3>Lilya</h3>
-                    <p>Work with Bold Agency was the best part of my professional career. Nothing
-                        could be better without it, and your business can go to another level.</p>
-                    <img src="./images/RATE.svg" class="stars" />
-                </div>
-                <div id="lastPerson" data-aos="flip-left" data-aos-duration="1000" class="person">
-                    <img src="./images/DEPOIMENTO1.png" class="profilePicture" />
-                    <h3>Lilya</h3>
-                    <p>Work with Bold Agency was the best part of my professional career. Nothing
-                        could be better without it, and your business can go to another level.</p>
-                    <img src="./images/RATE.svg" class="stars" />
+                <div class="person">
+                    <img src="./images/DEPOIMENTO1.png"/>
+                    <div class="personText">
+                        <h3>Lilya</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt officia, cupiditate et maiores vitae sequi ex odit culpa quia nisi odio ipsam magni</p>
+                    </div>
+                    <img src="./images/RATE.svg" />
                 </div>
             </div>
         </div>
@@ -149,11 +147,11 @@
     </section>
     <section class="contact">
         <h1>Send your message to us!</h1>
-        <form>
-            <input type="text" id="" placeholder="Name" data-aos="fade-up" data-aos-duration="500"/>
-            <input type="email" id="" placeholder="E-mail" data-aos="fade-up" data-aos-duration="500"/>
-            <textarea placeholder="Your message" data-aos="fade-up" data-aos-duration="500"></textarea>
-            <input type="button" value="Send!" data-aos="fade-down" data-aos-duration="500" />
+        <form data-aos="fade-up" data-aos-duration="1000">
+            <input type="text" id="" placeholder="Name"/>
+            <input type="email" id="" placeholder="E-mail"/>
+            <textarea placeholder="Your message"></textarea>
+            <input type="button" value="Send!"/>
         </form>
     </section>
     <footer>

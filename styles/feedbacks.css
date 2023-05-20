@@ -8,42 +8,63 @@
     color: black;
 }
 
-.feedbacks h1{
+.feedbacks > h1{
     font-size: 2.5em;
     letter-spacing: 1px;
 }
 
 .carousel{
-    width: 1400px;
-    height: 50vh;
+    width: 750px;
+    height: 412px;
     overflow: hidden;
 }
 
-div.personContainer{
-    width: 150%;
-    height: 100%;
+.personContainer{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    box-sizing: content-box;
-    transition: transform 0.5s ease-in-out;   
+    justify-content: space-evenly;
+    width: 200%;
+    height: 100%;
+
+    transition: all 0.5s ease-in-out;
     transform: translateX(0px);
 }
 
 .person{
-    box-sizing: content-box;
-    margin: 0 20px;
-    width: 40%;
-    height: 95%;
-    padding: 0 15px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-evenly;
+    text-align: center;
+
+    width: 350px;
+    height: 400px;
+    padding: 25px;
+    background-color: white;
+    box-shadow: 1px 1px 4px 2px rgb(202, 202, 202);
     border-radius: 15px;
-    box-shadow: 2px 2px 6px 3px rgb(207, 207, 207);
+
+
+}
+
+.person img:first-of-type{
+
+}
+
+.person img:last-of-type{
+    width: 100px;
+}
+
+.person h3{
+    font-size: 1rem;
+}
+
+.person p{
+    margin-top: 5px;
+    font-size: .8rem;
     text-align: justify;
 }
+
 .buttons{
     width: 80px;
     display: flex;

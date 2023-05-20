@@ -1,19 +1,26 @@
 
+function scrollX(){ 
 const buttonLeft = document.querySelector('#scrollLeft')
 const buttonRight = document.querySelector('#scrollRight')
 let feedback = document.querySelector('.personContainer')
+let carousel = document.querySelector('.carousel')
 
-function scrollX(){    
 
-if(feedback.style.transform == 'translateX(0px)'){
-    feedback.style.transform = 'translateX(-700px)'
-    buttonRight.style.filter = 'brightness(30%)'
-    buttonLeft.style.filter = 'brightness(100%)'
-}else{
-    feedback.style.transform = 'translateX(0px)'
-    buttonRight.style.filter = 'brightness(100%)'
-    buttonLeft.style.filter = 'brightness(30%)'
-}
+    if(window.innerWidth > 750){
+        if(feedback.style.transform == 'translateX(0px)'){
+            feedback.style.transform = 'translateX(-750px)'
+            buttonRight.style.filter = 'brightness(30%)'
+            buttonLeft.style.filter = 'brightness(100%)'
+        }else{
+            feedback.style.transform = 'translateX(0px)'
+            buttonRight.style.filter = 'brightness(100%)'
+            buttonLeft.style.filter = 'brightness(30%)'
+        }
+    }else if(window.innerWidth <= 750){
+        
+    }
+
+
 
 }
 
@@ -21,4 +28,13 @@ function backToTop(){
     window.scrollTo(0,0)
 }
 
-window.onload(setInterval(() => {scrollX()}, 3500))
+function revealMenu(){
+    const mobileMenu = document.querySelector('.mobileLinks')
+    if(mobileMenu.style.display == 'none'){
+        mobileMenu.style.display = 'flex'
+    }else{
+        mobileMenu.style.display = 'none'
+    }
+}
+
+//window.setInterval(() => {scrollX()}, 3000)
