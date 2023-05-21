@@ -3,8 +3,6 @@ function scrollX(){
 const buttonLeft = document.querySelector('#scrollLeft')
 const buttonRight = document.querySelector('#scrollRight')
 let feedback = document.querySelector('.personContainer')
-let carousel = document.querySelector('.carousel')
-
 
     if(window.innerWidth > 750){
         if(feedback.style.transform == 'translateX(0px)'){
@@ -16,8 +14,26 @@ let carousel = document.querySelector('.carousel')
             buttonRight.style.filter = 'brightness(100%)'
             buttonLeft.style.filter = 'brightness(30%)'
         }
-    }else if(window.innerWidth <= 750){
-        
+    }else if(window.innerWidth > 750){
+        if(feedback.style.transform == 'translateX(0px)'){
+            feedback.style.transform = 'translateX(-450px)'
+            buttonRight.style.filter = 'brightness(30%)'
+            buttonLeft.style.filter = 'brightness(100%)'
+        }else{
+            feedback.style.transform = 'translateX(0px)'
+            buttonRight.style.filter = 'brightness(100%)'
+            buttonLeft.style.filter = 'brightness(30%)'
+        }
+    }else{
+        if(feedback.style.transform == 'translateX(0px)'){
+            feedback.style.transform = 'translateX(-290px)'
+            buttonRight.style.filter = 'brightness(30%)'
+            buttonLeft.style.filter = 'brightness(100%)'
+        }else{
+            feedback.style.transform = 'translateX(0px)'
+            buttonRight.style.filter = 'brightness(100%)'
+            buttonLeft.style.filter = 'brightness(30%)'
+        }
     }
 
 
@@ -37,4 +53,4 @@ function revealMenu(){
     }
 }
 
-//window.setInterval(() => {scrollX()}, 3000)
+window.setInterval(() => {scrollX()}, 3000)

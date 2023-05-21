@@ -34,11 +34,13 @@ section.whyUS{
 }
 
 .cardsTitle h1{
-    font-size: 40px;
+    font-size: 2rem;
     letter-spacing: 1px;
 }
 
 .cardsTitle p{
+    text-align: center;
+    font-size: 0.7rem;
     color: rgb(172, 172, 172);
 }
 

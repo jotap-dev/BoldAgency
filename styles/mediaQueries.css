@@ -33,12 +33,8 @@
         height: 75%;
     }
 
-    .cardContainer{
-        flex-wrap: wrap;
-    }
-
     .card{
-        height: 50%;
+        height: 70%;
     }
 
     .card img{
@@ -57,9 +53,20 @@
 
 @media screen and (max-width:750px) {
     
+    section.experience h1{
+        font-size: 1rem;
+    }
+
+    section.experience span{
+        font-size: 0.5rem;
+    }
+
+    div.website{
+        width: 100%;
+    }
+
     .carousel{
         width: 450px;
-        border: 4px dotted red;
     }
 
     .person{
@@ -73,5 +80,274 @@
 
     .person p{
         font-size: 0.5rem;
+    }
+
+    form input{
+        width: 75%;
+    }
+
+    form textarea{
+        width: 75%;
+    }
+
+    section.whyUS{
+        height: 100%;
+    }
+
+    .card{
+        height: 250px;
+        width: 190px;
+    }
+
+    .card img{
+        margin-bottom: -5px;
+    }
+
+    .enterprisesContainer img{
+        width: 120px;
+    }
+
+    .cardContainer{
+        height: 100%;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .benefitsText h1{
+        font-size: 2rem;
+        font-weight: 500;
+        color: black;
+    }
+
+    .checklist img{
+        width: 50px;
+    }
+
+    .checklist li{
+        font-size: 0.5rem;
+    }
+
+    section.graph{
+        height: 70%;
+    }
+
+    .graph h1{
+        font-size: 1.5rem;
+    }
+    .graph p{
+        font-size: 0.8rem;
+    }
+
+    #arrowTop{
+        right: 20px;
+        bottom: 80px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .title{
+        padding-bottom: 100px;
+    }
+
+}
+
+@media screen and (max-width:450px) {
+
+    #arrowTop{
+        right: 8px;
+        bottom: 50px;
+        width: 40px;
+        height: 40px;
+    }
+
+    form input{
+        width: 90%;
+        padding: 10px 25px;
+        font-size: 0.7rem;
+    }
+
+    form textarea{
+        font-size: 0.7rem;
+        padding: 10px 25px;
+    }
+
+    nav.mobileMenu img{
+        width: 40px;
+    }
+
+    body > main.mainContext{
+        height: 80%;
+    }
+
+    section.experience{
+        padding: 25px 0;
+    }
+
+    .experience > .title h1{
+        font-size: 0.7rem;
+    }
+
+    .experience > .title span{
+        font-size: 0.5rem;
+    }
+
+    section.experience{
+        justify-content: flex-start;
+    }
+
+    .mainHead h2{
+        font-size: 1rem;
+        margin-left: 15px;
+    }
+
+    section.whyUS{
+        height: 140%;
+        padding: 20px;
+    }
+
+    .card{
+        width: 250px;
+        height: 200px;
+        margin-bottom: 15px;
+    }
+
+    .carousel{
+        width: 290px;
+    }
+
+    .person{
+        width: 140px;
+        height: 250px;
+    }
+
+    .person img:first-of-type{
+        width: 40px;
+    }
+
+    .person img:last-of-type{
+        width: 40px;
+    }
+
+    .person h3{
+        font-size: 0.5rem;
+    }
+
+    .person p{
+        font-size: 0.4rem;
+    }
+
+    section.feedbacks h1{
+        font-size: 1.5rem;
+    }
+
+    section.getStarted{
+        height: 130%;
+    }
+
+    section.getStarted main{
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+    
+    section.getStarted > main > div{
+        width: 100%;
+        height: 100%;
+        padding: 15px;
+        display: flex;
+    }
+    
+    .benefitsText{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .benefitsText h1{
+        font-size: 1rem;
+        font-weight: 500;
+        color: black;
+    }
+    
+    .checklist{
+        display: flex;
+        height: 100%;
+        width: 90%;
+        overflow-x: hidden;
+        flex-direction: column;
+        justify-content: space-between;
+        list-style-type: none;
+    }
+    
+    .checklist img{
+        height: auto;
+        width: 40px;
+    }
+    
+    .checklist li{
+        display: flex;
+        align-items: center;
+        font-size: 0.6rem;
+        font-weight: 300;
+        color: gray;
+        text-align: justify;
+    }
+    
+    div.benefitsImage{
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        background-size: 90%;
+    }
+
+    .getStarted> header > h1{
+        font-size: 1.2rem;
+    }
+    
+    .getStarted> header > span{
+        font-size: 0.7rem;
+        margin-top: 0;
+    }
+    
+    .getStarted> header > button{
+        font-size: 0.8rem;
+        padding: 10px 30px;
+    }
+
+    .contact h1{
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+    }
+
+    form input{
+        width: 90%;
+    }
+
+    form textarea{
+        width: 90%;
+    }
+
+    footer h2{
+        font-size: 0.6rem;
+    }
+
+    section.graph h1{
+        font-size: 0.8rem;
+    }
+
+    section.graph p{
+        font-size: 0.6rem;
+    }
+
+    section.graph div{
+        width: 120%;
+    }
+
+    section.whyUS .cardsTitle > h1{
+        font-size: 1rem;
+    }
+    section.whyUS .cardsTitle > p{
+        font-size: 0.6rem;
     }
 }
