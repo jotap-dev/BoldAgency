@@ -12,7 +12,7 @@ Some frameworks are used, some of them are:
 -AOS js
 -Chart JS
 
-The page is builded from the 0, only the web design are used from other project to make de base visual.
+The page is builded from the 0, only the web design is used from other project to make the base visual.
 
 If you like this project and wanna make some changes, Fork it!
 
